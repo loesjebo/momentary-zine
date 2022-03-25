@@ -19,7 +19,7 @@ Thermo print has the characteristic of vanishing after a while. With an easy hac
 
   Run the following command in Terminal/Command-line from inside the directory/folder _momentary-zine-master_ you got from git. 
 
-  $ sudo ./server.sh
+  _$ sudo ./server.sh_
   
   If it asks for a password, it wants the pass of your laptop/computer.
   
@@ -47,7 +47,7 @@ Thermo print has the characteristic of vanishing after a while. With an easy hac
   
   Navigate to this page in Chrome browser: 
 
-  [http://localhost:631] (http://localhost:631)
+  [http://localhost:631](http://localhost:631)
   
   As the CUPS Web Interface may be disabled by default on your Mac, you will need to enable it in order to have your Thermal Receipt printers appear on the network. A screen will then appear saying _Web Interface is Disabled_. An indication that CUPS has been disabled on your particular Mac device. 
   
@@ -55,7 +55,7 @@ Thermo print has the characteristic of vanishing after a while. With an easy hac
 
   Enable CUPS by copying the command:
   
-  cupsctl WebInterface=yes
+  _cupsctl WebInterface=yes_
   
   and pasting it into a terminal window (if server is running, quit first by hitting control + C), then hit enter.
   
@@ -77,7 +77,7 @@ Thermo print has the characteristic of vanishing after a while. With an easy hac
   
   In the dropdown that says _Administration_, choose _Set default options_
   
-  * In _General_, set 72mm x 200mm as media size using the dropdown 
+  * In _General_, set **72mm x 200mm** as media size using the dropdown 
   * Go to _Cut Options_ and set both to **Partial cut**
   * Go o _Output Options_ and select page type: **Fixed length**
 
@@ -87,7 +87,7 @@ Thermo print has the characteristic of vanishing after a while. With an easy hac
 
   Now browse to the interface by putting this url in your Chrome browser
   
-  [https://localhost/index.html] (https://localhost/index.html)
+  [https://localhost/index.html](https://localhost/index.html)
 
   Remember to give your browser permission to access your microphone.
 
@@ -99,11 +99,13 @@ Thermo print has the characteristic of vanishing after a while. With an easy hac
   
   ### Check terminal if it doesn't print
   
-  Is it sent to a different printer in your installed printers? 
+  Check the terminal window for troubleshooting
   
-  Go into system settings on computer and make set the Star printer as default printer
+  Is it sent to a different printer that is in the list of installed printers on your machine? 
   
-  You can review pending print jobs and error in the CUPS interface to for troubleshooting: http://localhost:631/printers
+  > Go into system settings on computer and make set the Star printer as default printer
+  
+  You can also review pending print jobs and error in the CUPS interface to for troubleshooting: http://localhost:631/printers
 
 
 
